@@ -1,0 +1,3 @@
+nacos配置新增以下功能：
+1、message文件nacos配置管理
+2、其它类型文件nacos配置管理

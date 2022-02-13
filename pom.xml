@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>io.github.software-hhao</groupId>
+        <artifactId>hhao-common</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <inceptionYear>2021</inceptionYear>
+    <modules>
+        <module>hhao-cloud-nacos-spring-boot-starter</module>
+        <module>hhao-cloud-openfeign-spring-boot-starter</module>
+        <module>hhao-cloud-sentinel-spring-boot-start</module>
+    </modules>
+
+    <groupId>io.github.software-hhao</groupId>
+    <artifactId>hhao-cloud</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.software-hhao</groupId>
+                <artifactId>hhao-cloud-nacos-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.software-hhao</groupId>
+                <artifactId>hhao-cloud-openfeign-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.software-hhao</groupId>
+                <artifactId>hhao-cloud-sentinel-spring-boot-start</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

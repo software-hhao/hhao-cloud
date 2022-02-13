@@ -1,0 +1,8 @@
+/.idea/
+/*/target
+/*/*.iml
+/*/HELP.md
+/*/mvnw.cmd
+/*/.mvn
+/*/.flattened-pom.xml
+/.flattened-pom.xml
