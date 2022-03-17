@@ -15,10 +15,11 @@
  */
 package com.hhao.cloud.openfeign.config;
 
-import com.hhao.common.springboot.exception.AbstractBaseRuntimeException;
-import com.hhao.common.springboot.exception.entity.other.ResultWrapperException;
-import com.hhao.common.springboot.exception.entity.server.ServiceUnavailableException;
-import com.hhao.common.springboot.exception.entity.unknow.UnknowException;
+
+import com.hhao.common.exception.AbstractBaseRuntimeException;
+import com.hhao.common.exception.error.server.ServiceUnavailableException;
+import com.hhao.common.exception.error.unknow.UnknowException;
+import com.hhao.common.springboot.exception.error.other.ResultWrapperException;
 import feign.FeignException;
 import feign.RetryableException;
 import org.slf4j.Logger;

@@ -15,11 +15,10 @@
  */
 package com.hhao.cloud.sentinel.config;
 
-import com.alibaba.csp.sentinel.adapter.gateway.sc.callback.GatewayCallbackManager;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.hhao.common.exception.AbstractBaseRuntimeException;
+import com.hhao.common.exception.error.server.ServiceUnavailableException;
 import com.hhao.common.jackson.JacksonUtilFactory;
-import com.hhao.common.springboot.exception.AbstractBaseRuntimeException;
-import com.hhao.common.springboot.exception.entity.server.ServiceUnavailableException;
 import com.hhao.common.springboot.exception.util.ErrorAttributeConstant;
 import com.hhao.common.springboot.response.ResultWrapperBuilder;
 import org.slf4j.Logger;

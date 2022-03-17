@@ -2,45 +2,90 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
         <groupId>io.github.software-hhao</groupId>
         <artifactId>hhao-common</artifactId>
         <version>1.0.0</version>
+        <relativePath></relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <inceptionYear>2021</inceptionYear>
-    <modules>
-        <module>hhao-cloud-nacos-spring-boot-starter</module>
-        <module>hhao-cloud-openfeign-spring-boot-starter</module>
-        <module>hhao-cloud-sentinel-spring-boot-start</module>
-    </modules>
-
     <groupId>io.github.software-hhao</groupId>
     <artifactId>hhao-cloud</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
+
+    <name>hhao-cloud</name>
+    <description>Top pom.xml file</description>
+    <url>https://github.com/software-hhao/hhao-cloud</url>
+
+    <licenses>
+        <license>
+            <name>GNU GENERAL PUBLIC LICENSE Version 3</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/software-hhao/hhao-cloud</url>
+        <connection>scm:git:ssh://git@github.com/software-hhao/hhao-cloud.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/software-hhao/hhao-cloud.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>WangSheng</name>
+            <email>hhao.software@hotmail.com</email>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>hhao-cloud-nacos-spring-boot-starter</module>
+        <module>hhao-cloud-openfeign-spring-boot-starter</module>
+        <module>hhao-cloud-sentinel-spring-boot-starter</module>
+        <module>hhao-cloud-dubbo-spring-boot-starter</module>
+        <module>hhao-cloud-message-bus-spring-boot-starter</module>
+    </modules>
+
+    <properties>
+        <hhao-cloud.version>1.0.0</hhao-cloud.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.github.software-hhao</groupId>
                 <artifactId>hhao-cloud-nacos-spring-boot-starter</artifactId>
-                <version>${project.version}</version>
+                <version>${hhao-cloud.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.github.software-hhao</groupId>
                 <artifactId>hhao-cloud-openfeign-spring-boot-starter</artifactId>
-                <version>${project.version}</version>
+                <version>${hhao-cloud.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>io.github.software-hhao</groupId>
-                <artifactId>hhao-cloud-sentinel-spring-boot-start</artifactId>
-                <version>${project.version}</version>
+                <artifactId>hhao-cloud-sentinel-spring-boot-starter</artifactId>
+                <version>${hhao-cloud.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>io.github.software-hhao</groupId>
+                <artifactId>hhao-cloud-dubbo-spring-boot-starter</artifactId>
+                <version>${hhao-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.software-hhao</groupId>
+                <artifactId>hhao-cloud-message-bus-spring-boot-starter</artifactId>
+                <version>${hhao-cloud.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>

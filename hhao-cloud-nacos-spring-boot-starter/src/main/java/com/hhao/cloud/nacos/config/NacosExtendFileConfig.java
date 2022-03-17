@@ -37,8 +37,8 @@ import org.springframework.core.ResolvableType;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
-
 import java.io.File;
+import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Locale;
 import java.util.Properties;
@@ -213,7 +213,7 @@ public class NacosExtendFileConfig {
     private void saveAsFileWriter(String fileName, String content) {
         try {
             File file=new File(fileName);
-            FileUtils.writeStringToFile(file, content);
+            FileUtils.writeStringToFile(file, content, Charset.forName("UTF-8"));
             logger.info("Configuration has been updated! Local file path:{}", fileName);
         } catch (Exception e) {
             logger.error("configuration exception!Local file path:{} Exception information:{}", fileName, e);

@@ -15,7 +15,7 @@
  */
 package com.hhao.cloud.openfeign.config;
 
-import com.hhao.common.springboot.exception.entity.other.ResultWrapperException;
+import com.hhao.common.springboot.exception.error.other.ResultWrapperException;
 import com.hhao.common.springboot.response.ResultWrapper;
 import com.hhao.common.springboot.response.ResultWrapperUtil;
 import feign.FeignException;

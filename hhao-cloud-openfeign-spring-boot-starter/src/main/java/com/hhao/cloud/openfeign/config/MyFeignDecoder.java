@@ -15,9 +15,10 @@
  */
 package com.hhao.cloud.openfeign.config;
 
-import com.hhao.common.springboot.exception.entity.other.ResultWrapperException;
-import com.hhao.common.springboot.exception.entity.server.ServerException;
-import com.hhao.common.springboot.exception.entity.unknow.UnknowException;
+
+import com.hhao.common.exception.error.server.ServerException;
+import com.hhao.common.exception.error.unknow.UnknowException;
+import com.hhao.common.springboot.exception.error.other.ResultWrapperException;
 import com.hhao.common.springboot.response.ResultWrapper;
 import com.hhao.common.springboot.response.ResultWrapperConstant;
 import com.hhao.common.springboot.response.ResultWrapperUtil;
