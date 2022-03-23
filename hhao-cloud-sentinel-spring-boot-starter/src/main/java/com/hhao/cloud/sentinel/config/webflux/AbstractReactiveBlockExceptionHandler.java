@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.hhao.cloud.sentinel.config;
+package com.hhao.cloud.sentinel.config.webflux;
 
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.hhao.common.exception.AbstractBaseRuntimeException;

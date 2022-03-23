@@ -5,28 +5,13 @@
     <parent>
         <artifactId>hhao-cloud</artifactId>
         <groupId>io.github.software-hhao</groupId>
-        <version>1.0.0</version>
+        <version>1.0.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hhao-cloud-sentinel-spring-boot-starter</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-datasource-nacos</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.github.software-hhao</groupId>
-            <artifactId>hhao-spring-boot-starter</artifactId>
-        </dependency>
-
         <!--mvc-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -41,6 +26,22 @@
         </dependency>
 
         <dependency>
+            <groupId>io.github.software-hhao</groupId>
+            <artifactId>hhao-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--sentinel-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-spring-cloud-gateway-adapter</artifactId>
             <optional>true</optional>
@@ -49,6 +50,12 @@
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-transport-simple-http</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-parameter-flow-control</artifactId>
             <optional>true</optional>
         </dependency>
     </dependencies>

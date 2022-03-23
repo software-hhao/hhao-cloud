@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.github.software-hhao</groupId>
         <artifactId>hhao-common</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.4</version>
         <relativePath></relativePath>
     </parent>
 
@@ -13,7 +13,7 @@
     <inceptionYear>2021</inceptionYear>
     <groupId>io.github.software-hhao</groupId>
     <artifactId>hhao-cloud</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>hhao-cloud</name>
@@ -51,7 +51,7 @@
     </modules>
 
     <properties>
-        <hhao-cloud.version>1.0.0</hhao-cloud.version>
+        <hhao-cloud.version>1.0.4-SNAPSHOT</hhao-cloud.version>
     </properties>
 
     <dependencyManagement>

@@ -1,3 +1,4 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.hhao.cloud.messagebus.config.MessageBusConfig
+  com.hhao.cloud.messagebus.config.MessageBusConfig,\
+  com.hhao.cloud.messagebus.config.MessageBusCustomizerConfig

@@ -1,0 +1,2 @@
+customProviderFilter=com.hhao.cloud.dubbo.filter.CustomProviderFilter
+customConsumeFilter=com.hhao.cloud.dubbo.filter.CustomConsumeFilter

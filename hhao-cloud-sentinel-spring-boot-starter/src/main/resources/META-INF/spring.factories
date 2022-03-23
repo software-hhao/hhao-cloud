@@ -1,3 +1,4 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.hhao.cloud.sentinel.config.SentinelConfig
+  com.hhao.cloud.sentinel.config.SentinelWebConfig,\
+  com.hhao.cloud.sentinel.config.SentinelWebFluxConfig
