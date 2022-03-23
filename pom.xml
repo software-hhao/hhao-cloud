@@ -11,7 +11,7 @@
     <inceptionYear>2021</inceptionYear>
     <groupId>io.github.software-hhao</groupId>
     <artifactId>hhao-cloud</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>hhao-cloud</name>
@@ -30,7 +30,7 @@
         <url>https://github.com/software-hhao/hhao-cloud</url>
         <connection>scm:git:ssh://git@github.com/software-hhao/hhao-cloud.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/software-hhao/hhao-cloud.git</developerConnection>
-        <tag>hhao-cloud-1.0.4</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
@@ -49,7 +49,7 @@
     </modules>
 
     <properties>
-        <hhao-cloud.version>1.0.4</hhao-cloud.version>
+        <hhao-cloud.version>1.0.5-SNAPSHOT</hhao-cloud.version>
     </properties>
 
     <dependencyManagement>
